@@ -1,0 +1,30 @@
+<div class="appDetails">
+    <div class="contactTopHeader">
+        <img class="img" height="120px" [src]="contactinformation?.picture" alt="">
+        <div class="information">
+            <h1>{{contactinformation?.firstName}} {{contactinformation?.lastName}}</h1>
+            <h4>{{contactinformation?.title}}</h4>
+            <div class="ActionsBtns">
+                <button class="btn-icon">
+                    <img src="../../../assets/images/icons/Focus.png" alt="">
+                  </button>
+                  <button class="btn-icon">
+                    <img src="../../../assets/images/icons/callaction.png" alt="">
+                  </button>
+                  <button class="btn-icon">
+                    <img src="../../../assets/images/icons/callaction.png" alt="">
+                  </button>
+            </div>
+        </div>
+    </div>
+    <div class="contactDetails">
+        <div class="contactsInfo">
+            <div class="heading">Location</div>
+            <div class="descriptions">{{contactinformation?.location.street}} {{contactinformation?.location.country}}  </div>
+        </div>
+        <div class="contactsInfo">
+            <div class="heading">Email</div>
+            <div class="descriptions">{{contactinformation?.email}}</div>
+        </div>
+    </div>
+</div>

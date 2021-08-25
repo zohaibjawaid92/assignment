@@ -1,0 +1,49 @@
+body{
+    background: #FAF9FF;
+}
+.btn-icon{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.appContact{   
+    padding: 0px 20px 0px 20px;
+    .mainHeading{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #8083A3;
+    }
+    .subHeading{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1A1C1D;
+    }
+    .contactsList{
+        display: flex;
+        justify-content: space-between;
+        .contactInfo{
+            display: flex;
+            img{
+                border-radius: 10px;
+            }
+            .imgAvator{
+                span{
+                    background: #F6933E;
+                    padding: 10px;
+                }
+            }
+            div{
+            margin-left: 10px;
+            }
+            h3{
+                margin: 0;
+            }
+        }
+    }
+}

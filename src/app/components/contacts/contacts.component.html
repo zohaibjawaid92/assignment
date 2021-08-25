@@ -1,0 +1,33 @@
+<div class="appContact">
+    <div class="container">
+        <h3 class="mainHeading">
+            Search for a contact
+        </h3>
+        <h1 class="subHeading">
+            Name, email or phone number
+        </h1>
+    </div>
+    <div (click)="checkDetail(contact)" *ngFor="let contact of contactList?.data">
+        <div routerLink="/contactdetails/{{contact.id}}" class="contactsList">
+            <div class="contactInfo">
+                <img height="50px" [src]="contact.picture" alt="">
+                <div class="">
+                   <h3>{{contact?.firstName}} {{contact?.lastName}}</h3>
+                   <p>{{contact?.title}}</p>
+                </div>
+            </div>
+            <div>
+               <button class="btn-icon">
+                   <img src="../../../assets/images/icons/Chat.png" alt="">
+                 </button>
+                 <button class="btn-icon">
+                    <img src="../../../assets/images/icons/Call.png" alt="">
+                  </button>
+                  <button class="btn-icon">
+                    <img src="../../../assets/images/icons/Actions.png" alt="">
+                  </button>
+            </div>
+        </div>
+       
+   </div>
+</div>
